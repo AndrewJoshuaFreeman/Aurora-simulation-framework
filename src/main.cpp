@@ -1,5 +1,6 @@
 //main.cpp
 #include "../include/entity.h"
+#include <iostream>
 #include <vector>
 
 int main(){
