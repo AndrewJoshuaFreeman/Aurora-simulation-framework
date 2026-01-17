@@ -2,6 +2,7 @@
 #pragma once
 
 #include "entity.h"
+#include <cstdint>
 #include <vector>
 
 
@@ -13,6 +14,6 @@ public:
 
 private:
     std::vector<Entity> m_entities;
-    int m_nextId{0};
+    std::uint32_t m_nextId{0};
 
 };

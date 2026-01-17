@@ -1,15 +1,19 @@
 //main.cpp
-#include "../include/entity.h"
+#include "../include/entity_manager.h"
 #include <iostream>
-#include <vector>
 
 int main(){
 
-    std::vector<Entity> entities;
+    EntityManager manager;
 
-    entities.push_back( Entity{EntityId{0}} );
+    manager.createEntity();
+    manager.createEntity();
+    manager.createEntity();
 
-    std::cout << "Entity: " << entities[0] << '\n';
+    for( const auto& e : manager.entities() ){
+        std::cout << "Entity: " << e << '\n';
+    }
+
 
 return 0;
 }
